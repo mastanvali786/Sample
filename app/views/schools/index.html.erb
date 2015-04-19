@@ -1,0 +1,79 @@
+<h1>Listing schools</h1>
+<table>
+  <tr>
+    <th>School id</th>
+    <th>School name</th>
+    <th>School number</th>
+    <th>Web url</th>
+    <th>Logo file name</th>
+  </tr>
+  <% @schools.each do |school| %>
+    <tr>
+      <td>
+        <%= school.school_id %>
+      </td>
+      <td>
+        <%= school.school_name %>
+      </td>
+      <td>
+        <%= school.school_number %>
+      </td>
+      <td>
+        <%= school.web_url %>
+      </td>
+      <td>
+        <%= school.logo_file_name %>
+      </td>
+      <td>
+        <%= school.pic_file_name %>
+      </td>
+      <td>
+        <%= school.desc %>
+      </td>
+      <td>
+        <%= school.status_id %>
+      </td>
+      <td>
+        <%= school.school_stat_id %>
+      </td>
+      <td>
+        <%= school.demo_flag_id %>
+      </td>
+      <td>
+        <%= school.discount %>
+      </td>
+      <td>
+        <%= school.discount_amt %>
+      </td>
+      <td>
+        <%= school.start_month %>
+      </td>
+      <td>
+        <%= school.end_month %>
+      </td>
+      <td>
+        <%= school.creation_date %>
+      </td>
+      <td>
+        <%= school.created_by %>
+      </td>
+      <td>
+        <%= school.last_update %>
+      </td>
+      <td>
+        <%= school.last_updated_by %>
+      </td>
+      <td>
+        <%= link_to 'Show', school %>
+      </td>
+      <td>
+        <%= link_to 'Edit', edit_school_path(school) %>
+      </td>
+      <td>
+        <%= link_to 'Destroy', school, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<br/>
+<%= link_to 'New School', new_school_path %>

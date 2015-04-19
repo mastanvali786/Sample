@@ -1,0 +1,63 @@
+%p#notice= notice
+
+%p
+  %b School loc:
+  = @school_location.school_loc_id
+%p
+  %b Addr1:
+  = @school_location.addr1
+%p
+  %b Addr2:
+  = @school_location.addr2
+%p
+  %b Addr3:
+  = @school_location.addr3
+%p
+  %b City:
+  = @school_location.city
+%p
+  %b State:
+  = @school_location.state_id
+%p
+  %b Country:
+  = @school_location.country_id
+%p
+  %b Postal code:
+  = @school_location.postal_code
+%p
+  %b Ph no:
+  = @school_location.ph_no
+%p
+  %b Fax no:
+  = @school_location.fax_no
+%p
+  %b Email:
+  = @school_location.email_id
+%p
+  %b Land mark1:
+  = @school_location.land_mark1
+%p
+  %b Land mark2:
+  = @school_location.land_mark2
+%p
+  %b Desc:
+  = @school_location.desc
+%p
+  %b Statu:
+  = @school_location.statu_id
+%p
+  %b Create date:
+  = @school_location.create_date
+%p
+  %b Created by:
+  = @school_location.created_by
+%p
+  %b Last update:
+  = @school_location.last_update
+%p
+  %b Last updated by:
+  = @school_location.last_updated_by
+
+= link_to 'Edit', edit_school_location_path(@school_location)
+\|
+= link_to 'Back', school_locations_path

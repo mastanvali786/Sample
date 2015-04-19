@@ -1,0 +1,49 @@
+%p#notice= notice
+
+%p
+  %b School id:
+  = @school.school_id
+%p
+  %b School name:
+  = @school.school_name
+%p
+  %b School number:
+  = @school.school_number
+%p
+  %b Web url:
+  = @school.web_url
+%p
+  %b Logo file name:
+  = @school.logo_file_name
+%p
+  %b Pic file name:
+  = @school.pic_file_name
+%p
+  %b Desc:
+  = @school.desc
+%p
+  %b Status:
+  = @school.status_id
+%p
+  %b School stat:
+  = @school.school_stat_id
+%p
+  %b Demo flag:
+  = @school.demo_flag_id
+%p
+  %b Discount:
+  = @school.discount
+%p
+  %b Discount amt:
+  = @school.discount_amt
+%p
+  %b Start month:
+  = @school.start_month
+%p
+  %b End month:
+  = @school.end_month
+ 
+
+= link_to 'Edit', edit_school_path(@school)
+\|
+= link_to 'Back', schools_path

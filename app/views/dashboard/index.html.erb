@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>
+        <%= get_view_text('h1') %>
+        <%= %{<span class='mini-red'>(development)</span>}.html_safe if Rails.env == 'development' %>
+      </h1>
+      <br/>
+      <br/>
+      
+      <p>
+        <%= t('private.welcome_html', default: '') %>
+      </p>
+    </div>
+    <% unless current_user %>
+      <div class="col-md-3 round-box devise">
+        <%= render 'dashboard/partials/login_form' %>
+      </div>
+    <% end %>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <br/>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</div>
+

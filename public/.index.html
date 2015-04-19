@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>Dashboard - rails4-example</title>
+    <meta content='Dashboard for rails4-example' name='description'>
+    <meta content='rails4 example starter rails ruby' name='keywords'>
+    <meta content='noopd' name='robots'>
+    <link data-turbolinks-track="true" href="/assets/colors.css?body=1" media="all" rel="stylesheet" />
+    <link data-turbolinks-track="true" href="/assets/custom_bootstrap/custom_bootstrap.css?body=1" media="all" rel="stylesheet" />
+    <link data-turbolinks-track="true" href="/assets/app_shared.css?body=1" media="all" rel="stylesheet" />
+    <link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" />
+    <script data-turbolinks-track="true" src="/assets/jquery.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/jquery_ujs.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/transition.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/alert.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/button.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/carousel.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/collapse.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/dropdown.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/modal.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/tooltip.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/popover.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/scrollspy.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/tab.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap/affix.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/twitter/bootstrap.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/ie/respond.min.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/app_shared.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/jquery.turbolinks.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/turbolinks.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
+    <script type='text/javascript'>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-40601573-3']);
+      _gaq.push(['_setDomainName','arails4eg.joanswork.net']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      if (((_ref = window.history) != null ? _ref.pushState : void 0) && window.history.replaceState && typeof Turbolinks !== 'undefined') {
+      document.addEventListener('page:change', function() {
+      if (window._gaq != null) {
+      _gaq.push(['_trackPageview']);
+      } else if (window.pageTracker != null) {
+      pageTracker._trackPageview();
+      } })
+      } else {
+      _gaq.push(['_trackPageview']);
+      }
+    </script>
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="47baKoxuo/fQhPXuv1N4hKyVSYOIWrkjJ2RK1Qo18os=" name="csrf-token" />
+    <!-- HTML5 shim and Respond.js (included above) IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src=\'http://html5shim.googlecode.com/svn/trunk/html5.js\' type=\'text/javascript\'></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class='navbar navbar-inverse navbar-fixed-top'>
+      <div class='container'>
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class="navbar-brand" href="/">rails4-example</a>
+        </div>
+        <div class='collapse navbar-collapse'>
+          <ul class='nav navbar-nav'>
+            <li class='active'><a href="/dashboard">Home</a></li>
+            <li class=''><a href="/help">Help</a></li>
+          </ul>
+          <ul class='nav navbar-nav navbar-right'>
+            <li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id='wrap'>
+      <div class='container'>
+        <div class='narrow-well'>
+          <div id='flash_messages'></div>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-8'>
+                <h1>
+                  Rails4 Example Application
+                  <span class='mini-red'>(development)</span>
+                </h1>
+                <br>
+                <br>
+                <p>Open source project illustrating a basic web application using Rails 4.0, Ruby 2.0, Devise and Twitter Bootstrap.</p>
+                <p>
+                  The source code can be found on github.com:
+                  <a class='btn btn-link' href='https://github.com/jehughes/rails4-example' target='_blank'>
+                    <img alt='Github.com' src='/assets/GitHub-Mark-20px.png'>
+                    jehughes/rails4-example
+                  </a>
+                </p>
+                <p>
+                  Please sign-up and have a look around. Or try "jane", "123123".
+                </p>
+              </div>
+              <div class='col-md-3 round-box devise'>
+                <form accept-charset="UTF-8" action="/users/sign_in" class="form-horizontal" method="post" role="form"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="47baKoxuo/fQhPXuv1N4hKyVSYOIWrkjJ2RK1Qo18os=" /></div>  <div class='modal-body'>
+                    <div class='form-group'>
+                      <label class='col-md-3 control-label devise normal' for='inputUsername1'>Username</label>
+                      <div class='col-md-9'>
+                        <input class="form-control" id="inputUsername1" name="user[username]" placeholder="username" type="text" />
+                      </div>
+                    </div>
+                    <div class='form-group'>
+                      <label class='col-md-3 control-label devise normal' for='inputPassword1'>Password</label>
+                      <div class='col-md-9'>
+                        <input class="form-control" id="inputPassword1" name="user[password]" placeholder="password" type="password" />
+                      </div>
+                    </div>
+                    <div class='form-group'>
+                      <div class='col-md-offset-3 col-md-9'>
+                        <div class='checkbox'>
+                          <label class='devise small-text'>
+                            <input name="user[remember_me]" type="hidden" value="0" /><input id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" />
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='form-group'>
+                      <div class='col-md-offset-3 col-md-9'>
+                        <div class='row'>
+                          <div class='col-md-3'>
+                            <input class="btn btn-success" name="commit" type="submit" value="Sign In" />
+                          </div>
+                          <div class='col-md-offset-2 col-md-6 small-text'>
+                            <a href="/users/password/new">Forgot&nbsp;password?</a>
+                            <a href="/help">Other&nbsp;login&nbsp;help</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='form-group'>
+                      <hr class='green'>
+                      <a class="btn btn-block btn-primary" href="/users/sign_up">Sign Up</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-12'>
+                <br>
+                <br>
+                <br>
+                <b>Gem versions:</b>
+                <div class='row'>
+                  <div class='col-md-2'>
+                    Rails 4.1.8
+                    <br>
+                    Ruby 2.0.0
+                    <br>
+                  </div>
+                  <div class='col-md-3'>
+                    less-rails-bootstrap 3.3.1.0<br />
+                  </div>
+                  <div class='col-md-2'>
+                    devise 3.4.1<br />
+                    cancan 1.6.10<br />
+                  </div>
+                  <div class='col-md-3'>
+                    <button class='btn btn-sm btn-default' data-target='#list_gems' data-toggle='collapse' type='button'>+/- List All Gems</button>
+                  </div>
+                </div>
+                <div class='row collapse' id='list_gems'>
+                  <br>
+                  <table class='table'><tr><td>actionmailer 4.1.8<br />actionpack 4.1.8<br />actionview 4.1.8<br />activemodel 4.1.8<br />activerecord 4.1.8<br />activesupport 4.1.8<br />addressable 2.3.6<br />arel 5.0.1.20140414130214<br />ast 2.0.0<br />astrolabe 1.3.0<br />awesome_print 1.2.0<br />bcrypt 3.1.9<br />better_errors 2.0.0<br />binding_of_caller 0.7.2<br />builder 3.2.2<br />bundler 1.7.6<br />cancan 1.6.10<br />capistrano 3.2.1<br /></td><td>capistrano-bundler 1.1.3<br />capistrano-rails 1.1.2<br />capybara 2.4.4<br />childprocess 0.5.5<br />classy_enum 3.5.0<br />code_analyzer 0.4.5<br />coderay 1.1.0<br />coffee-rails 4.1.0<br />coffee-script 2.3.0<br />coffee-script-source 1.8.0<br />colored 1.2<br />colorize 0.7.3<br />commonjs 0.2.7<br />database_cleaner 1.3.0<br />debug_inspector 0.0.2<br />devise 3.4.1<br />diff-lcs 1.2.5<br />erubis 2.7.0<br /></td><td>execjs 2.2.2<br />factory_girl 4.5.0<br />factory_girl_rails 4.5.0<br />faker 1.4.3<br />ffi 1.9.6<br />haml 4.0.5<br />haml-lint 0.7.0<br />haml-rails 0.5.3<br />hike 1.2.3<br />i18n 0.6.11<br />jbuilder 2.2.5<br />jquery-rails 3.1.2<br />jquery-turbolinks 2.1.0<br />jquery-ui-rails 5.0.2<br />json 1.8.1<br />launchy 2.4.3<br />less 2.6.0<br />less-rails 2.6.0<br /></td><td>less-rails-bootstrap 3.3.1.0<br />libv8 3.16.14.7<br />mail 2.6.3<br />mime-types 2.4.3<br />mini_portile 0.6.1<br />minitest 5.4.3<br />multi_json 1.10.1<br />mysql2 0.3.17<br />net-scp 1.2.1<br />net-ssh 2.9.1<br />nokogiri 1.6.4.1<br />orm_adapter 0.5.0<br />parser 2.2.0.pre.8<br />powerpack 0.0.9<br />rack 1.5.2<br />rack-test 0.6.2<br />rails 4.1.8<br />rails_best_practices 1.15.4<br /></td><td>railties 4.1.8<br />rainbow 2.0.0<br />rake 10.3.2<br />rdoc 4.1.2<br />reek 1.4.0<br />ref 1.0.5<br />require_all 1.3.2<br />responders 1.1.2<br />rspec-core 3.1.7<br />rspec-expectations 3.1.2<br />rspec-mocks 3.1.3<br />rspec-rails 3.1.0<br />rspec-support 3.1.2<br />rubocop 0.27.1<br />ruby-progressbar 1.7.0<br />ruby2ruby 2.1.3<br />ruby_parser 3.6.3<br />rubyzip 1.1.6<br /></td><td>sass 3.2.19<br />sass-rails 4.0.4<br />sdoc 0.4.1<br />selenium-webdriver 2.43.0<br />sexp_processor 4.4.4<br />slop 3.6.0<br />spring 1.1.3<br />sprockets 2.11.3<br />sprockets-rails 2.2.0<br />sshkit 1.5.1<br />sysexits 1.2.0<br />therubyracer 0.12.1<br />thor 0.19.1<br />thread_safe 0.3.4<br />tilt 1.4.1<br />turbolinks 2.5.2<br />tzinfo 1.2.2<br />uglifier 2.5.3<br /></td><td>warden 1.2.3<br />websocket 1.2.1<br />xpath 2.0.0<br /></td></tr></table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='footer'>
+      <div class='container'>
+        <p class='muted credit'>
+          Author: Joan Hughes [ <span class='footer-link'><a href='http://joanswork.com' target='_blank'>joanswork.com</a></span> ] [ <span class='footer-link'><img alt="Octocat very tiny" src="http://jehughes.com/images/Octocat_very_tiny.png" /><a href='http://github.com/jehughes' target='_blank'>Github.com Page</a> ], [ <a href='http://www.linkedin.com/in/jehughes' target='_blank'><img alt='LinkedIn profile' border='0' height='15' src='http://www.linkedin.com/img/webpromo/btn_in_20x15.png' style='vertical-align:middle' width='20'>LinkedIn Profile</a></span> ] <br> <small> <a href="http://ourdisclaimer.com/?i=arails4eg.joanswork.net".html_safe target='_blank'>Generic Site Usage Disclaimer</a> (exception: source in repository is under the MIT License)<br> <b>PRIVACY:</b> Any personal data saved will not be intentionally sold or distributed. However, there is NO legal guarantee any information saved is maintained, private or secure. Use common sense. </small>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

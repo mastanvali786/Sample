@@ -1,0 +1,67 @@
+= form_for @school_location do |f|
+  - if @school_location.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@school_location.errors.count, "error")} prohibited this school_location from being saved:"
+      %ul
+        - @school_location.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :school_loc_id
+    = f.number_field :school_loc_id
+  .field
+    = f.label :addr1
+    = f.text_field :addr1
+  .field
+    = f.label :addr2
+    = f.text_field :addr2
+  .field
+    = f.label :addr3
+    = f.text_field :addr3
+  .field
+    = f.label :city
+    = f.text_field :city
+  .field
+    = f.label :state_id
+    = f.number_field :state_id
+  .field
+    = f.label :country_id
+    = f.number_field :country_id
+  .field
+    = f.label :postal_code
+    = f.text_field :postal_code
+  .field
+    = f.label :ph_no
+    = f.text_field :ph_no
+  .field
+    = f.label :fax_no
+    = f.text_field :fax_no
+  .field
+    = f.label :email_id
+    = f.text_field :email_id
+  .field
+    = f.label :land_mark1
+    = f.text_field :land_mark1
+  .field
+    = f.label :land_mark2
+    = f.text_field :land_mark2
+  .field
+    = f.label :desc
+    = f.text_field :desc
+  .field
+    = f.label :statu_id
+    = f.number_field :statu_id
+  .field
+    = f.label :create_date
+    = f.date_select :create_date
+  .field
+    = f.label :created_by
+    = f.number_field :created_by
+  .field
+    = f.label :last_update
+    = f.date_select :last_update
+  .field
+    = f.label :last_updated_by
+    = f.number_field :last_updated_by
+  .actions
+    = f.submit 'Save'

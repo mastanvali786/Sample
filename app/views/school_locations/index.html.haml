@@ -1,0 +1,55 @@
+%h1 Listing school_locations
+
+%table
+  %tr
+    %th School loc
+    %th Addr1
+    %th Addr2
+    %th Addr3
+    %th City
+    %th State
+    %th Country
+    %th Postal code
+    %th Ph no
+    %th Fax no
+    %th Email
+    %th Land mark1
+    %th Land mark2
+    %th Desc
+    %th Statu
+    %th Create date
+    %th Created by
+    %th Last update
+    %th Last updated by
+    %th
+    %th
+    %th
+
+  - @school_locations.each do |school_location|
+    %tr
+      %td= school_location.school_loc_id
+      %td= school_location.addr1
+      %td= school_location.addr2
+      %td= school_location.addr3
+      %td= school_location.city
+      %td= school_location.state_id
+      %td= school_location.country_id
+      %td= school_location.postal_code
+      %td= school_location.ph_no
+      %td= school_location.fax_no
+      %td= school_location.email_id
+      %td= school_location.land_mark1
+      %td= school_location.land_mark2
+      %td= school_location.desc
+      %td= school_location.statu_id
+      %td= school_location.create_date
+      %td= school_location.created_by
+      %td= school_location.last_update
+      %td= school_location.last_updated_by
+      %td= link_to 'Show', school_location
+      %td= link_to 'Edit', edit_school_location_path(school_location)
+      %td= link_to 'Destroy', school_location, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New School location', new_school_location_path
